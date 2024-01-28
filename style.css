@@ -1,0 +1,944 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  color: white;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+nav {
+  background-color: darkblue;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  border-bottom: 3px solid yellow;
+}
+
+label.logo {
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+  letter-spacing: 5px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+  font-weight: bold;
+}
+
+nav ul li a {
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-right: 30px;
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: white;
+  float: right;
+  line-height: 80px;
+  margin-right: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+section {
+  /* border: 2px solid firebrick; */
+  width: 100%;
+  height: 100vh;
+  background: url(bg.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.home-contents {
+  margin-top: 80px;
+  width: 100%;
+  height: calc(100vh - 82px);
+  display: flex;
+}
+
+.home-contents img {
+  width: 500px;
+  height: 500px;
+  margin: 150px 100px;
+}
+
+.home-contents .hc {
+  /* border: 1px solid firebrick; */
+  margin-left: -70px;
+  padding-top: 300px;
+  text-align: center;
+}
+
+.home-contents .hc h2 {
+  padding: 10px;
+  font-size: 50px;
+}
+
+/*About contents CSS */
+.about-contents {
+  margin-top: 80px;
+  width: 100%;
+  height: calc(100vh - 82px);
+}
+
+.about-contents .vision {
+  width: 100%;
+}
+
+.about-contents .vision h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-contents .vision p {
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-contents .mission h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-contents .mission p {
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+.about-contents .goal {
+  width: 100%;
+}
+
+.about-contents .goal h2 {
+  font-size: 30px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.about-contents .goal p {
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 10px;
+  text-align: center;
+}
+
+/*COUTSES CSS*/
+.courses-contents {
+  /* border: 2px solid firebrick; */
+  width: 100%;
+  height: calc(100vh - 82px);
+  margin-top: 80px;
+}
+
+.courses-contents .course {
+  /* border: 2px solid red; */
+  height: 150px;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  background-color: darkblue;
+  border-radius: 20px;
+  justify-content: center;
+  margin-bottom: 3px;
+}
+
+.courses-contents .course h2 {
+  text-align: center;
+}
+
+/*SERVICES CSS*/
+
+.services-contents {
+  /* border: 2px solid firebrick; */
+  width: 100%;
+  padding: 5px;
+  margin-top: 80px;
+}
+
+.services-contents .service {
+  width: 100%;
+  height: 50%;
+  /* border: 2px solid firebrick; */
+  text-align: center;
+}
+
+.services-contents .service h3 {
+  font-size: 40px;
+  margin-top: 20px;
+  background-color: darkblue;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.services-contents .service p {
+  margin-top: 20px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+footer {
+  background-color: darkblue;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer p {
+  text-align: center;
+}
+
+footer i {
+  font-size: 40px;
+  margin-left: 50px;
+}
+
+/*
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  .
+  */
+
+@media (max-width: 1440px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* responsive CSS of Contents */
+  .home-contents {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 82px);
+    display: flex;
+  }
+
+  .home-contents img {
+    width: 400px;
+    height: 400px;
+    margin: 150px 100px;
+  }
+
+  .home-contents .hc {
+    /* border: 1px solid firebrick; */
+    margin-left: -70px;
+    padding-top: 300px;
+    text-align: center;
+  }
+
+  .home-contents .hc h2 {
+    padding: 10px;
+    font-size: 40px;
+  }
+
+  /*COUTSES CSS*/
+  .courses-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    height: calc(100vh - 82px);
+    margin-top: 80px;
+  }
+
+  .courses-contents .course {
+    /* border: 2px solid red; */
+    height: 150px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    background-color: darkblue;
+    border-radius: 20px;
+    justify-content: center;
+    margin-bottom: 3px;
+  }
+
+  .courses-contents .course h2 {
+    text-align: center;
+  }
+
+  /*SERVICES CSS*/
+
+  .services-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    padding: 5px;
+    margin-top: 80px;
+  }
+
+  .services-contents .service {
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid firebrick; */
+    text-align: center;
+  }
+
+  .services-contents .service h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    background-color: darkblue;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .services-contents .service p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 1024px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 50px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
+
+  /* responsive CSS of Contents */
+  .home-contents {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 82px);
+    display: flex;
+  }
+
+  .home-contents img {
+    width: 400px;
+    height: 400px;
+    margin: 150px 100px;
+  }
+
+  .home-contents .hc {
+    /* border: 1px solid firebrick; */
+    margin-left: -70px;
+    padding-top: 300px;
+    text-align: center;
+  }
+
+  .home-contents .hc h2 {
+    padding: 10px;
+    font-size: 40px;
+  }
+
+  /*COUTSES CSS*/
+  .courses-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    height: calc(100vh - 82px);
+    margin-top: 80px;
+  }
+
+  .courses-contents .course {
+    /* border: 2px solid red; */
+    height: 150px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    background-color: darkblue;
+    border-radius: 20px;
+    justify-content: center;
+    margin-bottom: 3px;
+  }
+
+  .courses-contents .course h2 {
+    text-align: center;
+  }
+
+  /*SERVICES CSS*/
+
+  .services-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    padding: 5px;
+    margin-top: 80px;
+  }
+
+  .services-contents .service {
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid firebrick; */
+    text-align: center;
+  }
+
+  .services-contents .service h3 {
+    font-size: 40px;
+    margin-top: 20px;
+    background-color: darkblue;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .services-contents .service p {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+@media (max-width: 905px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 30px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+  }
+
+  /* responsive CSS of Contents */
+  .home-contents {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 82px);
+    display: flex;
+  }
+
+  .home-contents img {
+    width: 300px;
+    height: 300px;
+    margin: 150px 100px;
+  }
+
+  .home-contents .hc {
+    /* border: 1px solid firebrick; */
+    margin-left: -70px;
+    padding-top: 300px;
+    text-align: center;
+  }
+
+  .home-contents .hc h2 {
+    padding: 10px;
+    font-size: 30px;
+  }
+}
+
+/* TABLET */
+@media (max-width: 768px) {
+  label.logo {
+    font-size: 30px;
+    padding-left: 30px;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background-color: darkblue;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 10px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* responsive CSS of Contents */
+}
+
+@media (max-width: 670px) {
+  label.logo {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: darkblue;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 10px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* responsive CSS of Contents */
+}
+
+@media (max-width: 425px) {
+  label.logo {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: darkblue;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 10px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* responsive CSS of Contents */
+  .home-contents {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 82px);
+    display: block;
+  }
+
+  .home-contents img {
+    width: 200px;
+    height: 200px;
+    margin: 80px 110px;
+  }
+
+  .home-contents .hc {
+    margin-left: 20px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .home-contents .hc h2 {
+    padding: 10px;
+    font-size: 25px;
+  }
+  /*---------------------------------------*/
+  .about-contents {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 82px);
+  }
+
+  .about-contents .vision {
+    width: 400px;
+    height: 150px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .about-contents .vision h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about-contents .vision p {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-contents .mission {
+    width: 400px;
+    height: 340px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .about-contents .mission h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about-contents .mission p {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-contents .goal {
+    width: 400px;
+    height: 240px;
+    margin: 10px;
+    border-radius: 5px;
+  }
+
+  .about-contents .goal h2 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about-contents .goal p {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /*COUTSES CSS*/
+  .courses-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    height: calc(100vh - 82px);
+    margin-top: 80px;
+  }
+
+  .courses-contents .course {
+    /* border: 2px solid red; */
+    height: 150px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    background-color: darkblue;
+    border-radius: 10px;
+  }
+
+  .courses-contents .course h2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /*SERVICES CSS*/
+
+  .services-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    padding: 5px;
+    margin-top: 80px;
+  }
+
+  .services-contents .service {
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid firebrick; */
+    text-align: center;
+  }
+
+  .services-contents .service h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: darkblue;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .services-contents .service p {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: darkblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 425px;
+    width: 100%;
+  }
+
+  footer h2 {
+    font-size: 10px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 8px;
+  }
+
+  footer i {
+    font-size: 20px;
+    margin-left: 2px;
+  }
+}
+
+@media (max-width: 375px) {
+  label.logo {
+    font-size: 20px;
+    padding-left: 30px;
+  }
+  .checkbtn {
+    display: block;
+  }
+  ul {
+    position: fixed;
+    width: 50%;
+    height: 100vh;
+    background-color: darkblue;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 10px;
+    justify-content: center;
+  }
+
+  nav ul li a {
+    font-size: 15px;
+  }
+
+  #check:checked ~ ul {
+    left: 0;
+  }
+
+  /* responsive CSS of Contents */
+  .home-contents {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 82px);
+    display: block;
+  }
+
+  .home-contents img {
+    width: 200px;
+    height: 200px;
+    margin: 80px 85px;
+  }
+
+  .home-contents .hc {
+    margin-left: 1px;
+    padding-top: 10px;
+    text-align: center;
+  }
+
+  .home-contents .hc h2 {
+    padding: 10px;
+    font-size: 25px;
+  }
+  /*---------------------------------------*/
+  .about-contents {
+    margin-top: 80px;
+    width: 100%;
+    height: calc(100vh - 82px);
+  }
+
+  .about-contents .vision {
+    width: 360px;
+    height: 150px;
+    margin: 5px;
+  }
+
+  .about-contents .vision h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about-contents .vision p {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-contents .mission {
+    width: 360px;
+    height: 340px;
+    margin: 5px;
+  }
+
+  .about-contents .mission h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about-contents .mission p {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .about-contents .goal {
+    width: 360px;
+    height: 260px;
+    margin: 5px;
+  }
+
+  .about-contents .goal h2 {
+    font-size: 25px;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .about-contents .goal p {
+    font-size: 15px;
+    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
+  }
+
+  /*COUTSES CSS*/
+  .courses-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    height: calc(100vh - 82px);
+    margin-top: 80px;
+  }
+
+  .courses-contents .course {
+    /* border: 2px solid red; */
+    height: 150px;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+  }
+
+  .courses-contents .course h2 {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /*SERVICES CSS*/
+
+  .services-contents {
+    /* border: 2px solid firebrick; */
+    width: 100%;
+    padding: 5px;
+    margin-top: 80px;
+  }
+
+  .services-contents .service {
+    width: 100%;
+    height: 50%;
+    /* border: 2px solid firebrick; */
+    text-align: center;
+  }
+
+  .services-contents .service h3 {
+    font-size: 30px;
+    margin-top: 20px;
+    background-color: darkblue;
+    padding: 5px;
+    border-radius: 5px;
+  }
+
+  .services-contents .service p {
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  footer {
+    background-color: darkblue;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 375px;
+    width: 100%;
+  }
+
+  footer h2 {
+    font-size: 10px;
+  }
+
+  footer p {
+    text-align: center;
+    font-size: 8px;
+  }
+
+  footer i {
+    font-size: 20px;
+    margin-left: 2px;
+  }
+}
